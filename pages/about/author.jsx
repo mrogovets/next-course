@@ -1,5 +1,9 @@
+import { MainLayout } from "../../components/MainLayout";
+
 const Author = () => {
-  return <h1>Author Page</h1>;
+  <MainLayout>
+    return <h1>Author Page</h1>;
+  </MainLayout>;
 };
 
 export default Author;

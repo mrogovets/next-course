@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
+import { MainLayout } from "../components/MainLayout";
 
 export default function Index() {
   return (
-    <React.Fragment>
+    <MainLayout title={"Home page"}>
       <h1>Hello Next.js</h1>
       <p>
         <Link href={"/about"}>
@@ -16,6 +18,6 @@ export default function Index() {
         </Link>
       </p>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-    </React.Fragment>
+    </MainLayout>
   );
 }
